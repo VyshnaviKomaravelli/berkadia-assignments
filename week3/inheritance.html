@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+    <script type="text/javascript">
+            var student= function(name)
+        {
+        this.name=name;
+        }
+         student.prototype.getname = function()
+         {
+             return this.name;
+         }
+        var id=function(id)
+        {
+            this.id=id;
+        }
+         
+        var student1=new student("Vyshnavi");
+        
+        id.prototype=student1;
+        var id1=new id(5);
+        document.write(id1.getname());
+
+        </script>
+</body>
+</html>
