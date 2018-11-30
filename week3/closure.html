@@ -1,0 +1,32 @@
+//*Closure means that an inner function always has access to the vars and parameters of its outer function, even after the outer function has returned.
+//*Closure is useful in hiding implementation detail in JavaScript. In other words, it can be useful to create private variables or functions.	  
+	  <html>
+<body>
+	<script>    
+	var counter = (function() {
+	  var innerCounter = 0;
+	  function changeBy(val) {
+		innerCounter += val;
+	  }
+	  return {
+		increment: function() {
+		  changeBy(1);
+		},
+		decrement: function() {
+		  changeBy(-1);
+		},
+		value: function() {
+		  return innerCounter;
+		}
+	  };   
+	})();
+
+	document.write(counter.value()+"<br/>"); 
+	counter.increment();
+	counter.increment();
+	document.write(counter.value()+'<br/>');
+	counter.decrement();
+	document.write(counter.value()); 
+	</script>	
+</body>
+</html>
