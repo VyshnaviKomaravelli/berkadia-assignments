@@ -1,0 +1,23 @@
+//IMMEDIATELY INVOKED FUNCTION EXPRESSIONS
+//SYNTAX:(function () {
+    // logic here
+//})();
+//eg:
+<!DOCTYPE html>
+<html>
+<body>
+	<script>    
+	var userName = "vyshu";
+
+(function (name) {
+
+    function display(name)
+    {
+        document.write(name);
+    }
+
+    display(name);
+})(userName);
+	</script>	
+</body>
+</html>
