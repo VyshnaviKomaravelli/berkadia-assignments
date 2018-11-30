@@ -69,8 +69,6 @@ for (const character of string) {
 	console.log(character)
 }
 // Result: I, r, e, , A, d, e, r, i, n, o, k, u, n
-															
-															
-															          for..in-----Applies to Enumerable Properties	-----------------Use with Objects?Yes-----------Use with Arrays?Yes, but not advised---------Use with Strings?Yes, but not advised	
-																  for..of:Applies toIterable Collections-------Use with Objects?No---------Use with Arrays?Yes-------Use with Strings?Yes
-																  (for..in not be used with Arrays, particularly because it cannot be guaranteed that the iteration happens in sequence, which is usually important for Arrays.)
+// for..in-----Applies to Enumerable Properties	-----------------Use with Objects?Yes-----------Use with Arrays?Yes, but not advised
+//-----Use with Strings?Yes, but not advised												//for..of:Applies toIterable Collections-------Use with Objects?No---------Use with Arrays?Yes-------Use with Strings?Yes
+//(for..in not be used with Arrays, particularly because it cannot be guaranteed that the iteration happens in sequence, which is //usually important for Arrays.)
