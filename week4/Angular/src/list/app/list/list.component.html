@@ -1,0 +1,16 @@
+<html>
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<table id="items">
+  <th>items</th> 
+    <th>cart</th>
+    
+  <tr *ngFor="let i of items">
+    <td>{{i}}</td>
+    <td><button value="Add To Cart" (click)="selected()"class="fa fa-shopping-cart">&emsp;Add To Cart</button>
+      </td>
+  </tr>
+</table>
+</html>
