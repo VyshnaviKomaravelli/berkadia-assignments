@@ -1,0 +1,48 @@
+<html>
+  <body align="center" bgcolor="#b2beb5 ">
+     
+<h1>PLACEMENT DETAILS</h1>
+
+<button class="button" (click)="value1()">IT</button>&emsp;
+<button  class="button" (click)="value2()">Marketing</button>
+
+<div [hidden]="show===false">
+<div [ngSwitch]="value" class="switch">
+  <div class="switch" *ngSwitchCase="IT">You have selected the stream of {{value}} for placements</div>
+ 
+  <div class="switch" *ngSwitchCase="Marketing">You have selected the stream of {{value}} for placements</div>
+  <div *ngSwitchDefault>You have selected the stream of {{value}} for placements</div>
+</div>
+
+  <p>Enter your Btech percentage in scale of 1 to 100:&emsp;&emsp;&emsp; <input type="number"min="0" max="100"[(ngModel)]="prct"placeholder="percent">
+  </p> <div *ngIf="prct < 60">You are not eligible for this job</div>
+  <div *ngIf="prct>=60  && value=='IT'">
+  <table>
+      <th>index</th>
+    <th>companies</th>
+<th>Departments</th>
+<tr *ngFor="let i of IT;let d = index;let e=even;let o=odd;let f=first;let l=last;" 
+    [ngClass]="{ fclass: f, lclass: l,oclass: o, eclass: e }">
+    <td>{{d+1}}</td>
+  <td>{{i.name}}</td>
+  <td>{{i.departments}}</td>
+</tr>
+  </table>
+  </div>
+  <div *ngIf="prct>=60  && value=='Marketing'">
+      <table >
+        <th>index</th>
+        <th>companies</th>
+    <th>Departments</th>
+    <tr *ngFor="let i of Marketing;let d = index;let e=even;let o=odd;let f=first;let l=last;" 
+    [ngClass]="{ fclass: f, lclass: l,oclass: o, eclass: e }">
+      <td>{{d+1}}</td>
+      <td>{{i.name}}</td>
+      <td>{{i.departments}}</td>
+    </tr>
+      </table>
+      </div>
+    </div>
+
+  </body>
+  </html>
