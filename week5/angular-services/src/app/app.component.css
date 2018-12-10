@@ -1,0 +1,52 @@
+
+.switch
+{
+line-height: "500%";
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(187, 50, 26); 
+}
+.button {
+    margin-right: "50px";
+    background-color: rgb(94, 88, 170);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  p{
+    font-size: 16px;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  table, th, td {
+     
+    border: 1px solid black;
+  }
+ 
+  .eclass
+  {
+
+    background-color: rgb(112, 180, 207); 
+  }
+  .oclass
+  {
+    background-color: rgb(57, 60, 223); 
+  }
+  .fclass
+  {
+    background-color: rgb(158, 65, 37); 
+  }
+  .lclass
+  {
+    background-color:  rgb(158, 65, 37); 
+  }
