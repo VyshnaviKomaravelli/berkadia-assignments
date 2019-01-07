@@ -1,0 +1,14 @@
+<h5 class="topcorner">
+    <i style="font-size:20px" class="fa">&#xf002;</i> 
+    &emsp; <input  class="fa fa-search"type="text" [(ngModel)]="term">
+
+</h5 >
+<div class="grid-container" >
+    
+    <div class="grid-item" *ngFor="let cities of city1  |filter:term">
+    <h3> City Name:{{cities.city}}</h3>
+    <h3>City count:{{cities.count}}</h3>
+     <h3> Locations:{{cities.locations}}</h3>
+     </div>
+ </div>
+  
