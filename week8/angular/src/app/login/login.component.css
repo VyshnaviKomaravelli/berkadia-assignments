@@ -1,0 +1,44 @@
+body{
+   width: 350px;
+   height: 300px;
+   top:0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: auto;
+}
+#parent {
+    display: table;
+    width: 100%;
+ }
+ #form_login {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+ }
+ button {
+   width: 120px;
+   height:30px;
+
+ font-size: 12px;
+ text-align: center;
+ cursor: pointer;
+ outline: none;
+ color: #fff;
+ background-color: #4CAF50;
+ border: none;
+ border-radius: 15px;
+
+
+  
+}
+div{
+   margin-bottom: 10px;
+}
+button:hover {background-color: #3e8e41}
+
+button:active {
+ background-color: #3e8e41;
+ box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}
