@@ -1,0 +1,13 @@
+<h2>Provide login details</h2>
+<body>
+  <div id="parent">
+      <form id="form_login">
+    <div>  Username: <input type="text" placeholder="Enter username" name="username" required [(ngModel)]="username">
+    </div><div></div> 
+    <div> Password:  <input type="text" placeholder="Enter password" name="password" required [(ngModel)]="password">
+    </div>
+     <div>  <button type="submit" (click)="home()">Submit</button> 
+    </div>     </form>
+  </div>
+  <h3>{{error}}</h3>
+  </body>
