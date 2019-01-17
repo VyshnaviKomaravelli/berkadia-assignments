@@ -1,0 +1,17 @@
+<h2>Hiring Drivers Online</h2>
+<body>
+
+  <img [src]="driver?.image"  onError="this.src='../../assets/default.jpg'" height="100" width="102">
+  <div>Name:{{driver?.Name}}</div>
+  <div>email:{{driver?.email}}</div>
+  <div>  Experience:{{driver?.experience}}</div>
+  <div>Rating:{{driver?.rating}}</div>
+  <div>Select Hiring Date From : <input type="date"value="01/12/2019" name="bookingDateFrom"[(ngModel)]="bookingDateFrom"></div>
+  <div>
+  
+  </div><div>Select Hiring Date To :<input type="date"value="01/12/2019" name="bookingDateTo"[(ngModel)]="bookingDateTo">
+  </div>
+  <div>
+  <button (click)="save(driver.Name)" >Book</button>
+ </div> <h3>{{status}}</h3>
+  </body>
