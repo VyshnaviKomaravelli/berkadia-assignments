@@ -1,0 +1,10 @@
+<h2>Hiring Drivers Online:</h2>
+ <div class="grid-container" >
+   <div class="grid-item" *ngFor="let driver of drivers">
+  <img [src]="driver.image" height="100" width="102">
+    <div>Name:{{driver.Name}}</div>
+    <div>Experience(years):{{driver.experience}}</div>
+    <div>Rating:{{driver.rating}}</div>
+   <button  [routerLink]="['/book',driver.id]">Hire</button>
+ </div>
+</div>
