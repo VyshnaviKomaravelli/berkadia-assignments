@@ -1,0 +1,18 @@
+ {{questionNumber+1}} {{questions?.question}}
+<div><input type="radio"  name="questions"  (click)="setradio(questions?.o1)"> {{questions?.o1}}
+</div><div><input type="radio"  name="questions" (click)="setradio(questions?.o2)"> {{questions?.o2}}
+</div><div><input type="radio"  name="questions" (click)="setradio(questions?.o3)"> {{questions?.o3}}
+</div><div><input type="radio"  name="questions" (click)="setradio(questions?.o4)"> {{questions?.o4}}
+</div>
+<div *ngIf="isSelected(questions?.o1)||isSelected(questions?.o2)||isSelected(questions?.o3)||isSelected(questions?.o4)" >  
+  <button (click)=previous() > previous</button>
+ 
+ <button (click)=next()> next</button>
+</div>  
+</div>
+<div *ngIf="i>0">
+  The correctly answered question numbers are:{{questions2}}
+ <div> Total number of correct answers:{{score}}/7;</div>
+ <div>The percentage:{{percentage}}</div>
+ 
+<router-outlet></router-outlet>
